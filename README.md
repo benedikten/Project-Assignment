@@ -4,21 +4,25 @@
 
 This is a website for the sustainable food delivery FRAM. The goal is to create a platform where users can browse products easily, see the local farms and interact with the integrated AI chatbot.
 
-Pages
 
-Landing page: Front page that introduces users to FRAM, with navigation to the other pages.
+Pages:
 
-Products page: Displays all the available products and pricing information. Includes an interactive map showing local farms.
+Landing page: 
+Front page that introduces users to FRAM, with navigation to the other pages.
 
-Chatbot page: Allows users to ask questions and receive instant help from the integrated AI chatbot.
+Products page: 
+Displays all the available products and pricing information. Includes an interactive map showing local farms.
+
+Chatbot page: 
+Allows users to ask questions and receive instant help from the integrated AI chatbot.
 
 
 Key features
-Users can browse available products
-Integrated AI Chatbot that answers questions 
-Clear and semantic HTML structure
-Layout built using CSS Flexbox and Grid
-Client-side form validation
+- Users can browse available products
+- Integrated AI Chatbot that answers questions 
+- Clear and semantic HTML structure
+- Layout built using CSS Flexbox and Grid
+- Client-side form validation
 
 
 ## Setup & Installation
