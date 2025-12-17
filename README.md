@@ -29,18 +29,18 @@ Key features
 
 Installation: 
 
-    1. Clone or download the repository
-    2. Locate the folder on your computer
-    3. Open index.html in your browser
-	4. Open the chatbot.js file and enter your OpenAI key 
+1. Clone or download the repository
+2. Locate the folder on your computer
+3. Open index.html in your browser
+4. Open the chatbot.js file and enter your OpenAI key 
 
 Important: Make sure to never share your API key publicly. Always keep it secret.
 
 
 ## How to Run Locally
 
-    1. Open index.html in a browser
-    2. Interact with the website and the chatbot
+1. Open index.html in a browser
+2. Interact with the website and the chatbot
 
 
 ## Known Limitations
