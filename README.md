@@ -27,12 +27,16 @@ Key features
 
 ## Setup & Installation
 
-Installation: 
-
+Installation:
 1. Clone or download the repository
 2. Locate the folder on your computer
 3. Open index.html in your browser
 4. Open the chatbot.js file and enter your OpenAI key 
+
+OpenAI key:
+1. Go to https://platform.openai.com/
+2. Create your API key
+3. Enter your OpenAI key where instructed in the chatbot.js file 
 
 Important: Make sure to never share your API key publicly. Always keep it secret.
 
