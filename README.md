@@ -1,22 +1,51 @@
-# Sustainable Food Delivery Website
-
+# Sustainable Food Deliver Webshop
 
 ## Project Description
 
-Describe your project and its core functionality here: what it does, what problem it solves, individual pages it consists of, and any other information you believe is relevant. Sell it!
+This is a website for the sustainable food delivery FRAM. The goal is to create a platform where users can browse products easily, see the local farms and interact with the integrated AI chatbot.
+
+Pages
+
+Landing page: Front page that introduces users to FRAM, with navigation to the other pages.
+
+Products page: Displays all the available products and pricing information. Includes an interactive map showing local farms.
+
+Chatbot page: Allows users to ask questions and receive instant help from the integrated AI chatbot.
+
+
+Key features
+Users can browse available products
+Integrated AI Chatbot that answers questions 
+Clear and semantic HTML structure
+Layout built using CSS Flexbox and Grid
+Client-side form validation
+
 
 ## Setup & Installation
 
-Describe any necessary setup/installation required, e.g. how to handle OpenAI key, Node if necessary, etc.
+Installation: 
+
+1. Clone or download the repository
+2. Locate the folder on your computer
+3. Open index.html in your browser
+	4. Open the chatbot.js file and enter your OpenAI key 
+
+Important: Make sure to never share your API key publicly. Always keep it secret.
+
 
 ## How to Run Locally
 
-Explain how to actually run the application, e.g. open `index.html` directly in your browser, or Node-related commands if necessary.
+Open index.html in a browser
+Interact with the website and the chatbot
+
 
 ## Known Limitations
+The chatbot requires a valid OpenAI API key to function
+Map requires valid API key to function
 
-Mention any known limitations, like no backend or database, and dependence on internet access for API calls.
 
 ## Future Improvements
 
-Your own ideas for expanding the solution, anything from UI improvements to extra features.
+Add a functional shopping cart and checkout page. 
+Implement user accounts and order history
+
