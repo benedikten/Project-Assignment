@@ -1,0 +1,473 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+body {
+  font-family: "Arimo", sans-serif;
+  font-size: 16px;
+  background-color: white;
+  color: #0B0A08;
+  align-items: center;
+ 
+}
+
+.skip-link {
+  position: absolute;
+  left: -999px;
+  z-index: 1000;    
+}
+
+/* text */
+
+h1 {
+  font-weight: normal;
+  font-family: "Frank Ruhl Libre", Light;
+  font-size: 36px;
+  
+}
+
+h1 a {
+    all: unset; 
+    display: inline; 
+    color: inherit;
+    cursor: default;
+}
+
+/* nav */
+
+nav {
+  
+  background-color: #F7F2DE;
+  padding: 1px 15px 1px 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid;
+  height: 87px;
+ 
+}
+
+.nav-button {
+  border: 0px;
+  background: none;
+  font-size: 20px;
+
+}
+
+.nav-button:hover {
+  opacity: 40%;
+}
+
+.basket {
+  background-color: #008F51;
+  font-family: "Arimo", sans-serif;
+  padding: 10px 20px;
+  border-radius: 19px;
+  justify-content: right;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #008F51;
+  width: 500px;
+  height: 1000px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  font-family: "Arimo", sans-serif;
+  font-size: 40px;
+  text-align: center;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  
+}
+
+
+.menubtn {
+  background: none;
+  border: none;
+  font-size: 30px;
+  padding: 20px;
+  padding-left: 30px;
+  
+}
+
+.menubtn:hover {
+  opacity: 40%;
+}
+
+.prod {
+  margin-top: 200px;
+}
+
+.checkout {
+  margin-top: 400px;
+}
+
+.dropdown-content a:hover {
+  text-decoration: underline;
+}
+.show {display:block;}
+
+
+
+
+.image-container {
+  
+}
+
+.image-container {
+  position: relative;
+}  
+  
+.image-container img {
+  width: 100%;
+  height: auto;         
+  display: block;
+}
+
+/*--Chatbot-*/
+
+.chatbot {
+  font-family: "Arimo, sans-serif";
+  width: 508px; 
+  height: 716px;
+  margin: 50px auto; 
+  margin-top: 0;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: white;
+  border-radius: 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end; 
+  overflow: hidden; 
+  
+}
+.chat-container {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  
+}
+
+.messages {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  overflow-y: auto; 
+  border-radius: 16px;
+  padding: 10px; 
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.input {
+  flex: 1;
+  font-family: "Elza Trial", sans-serif;
+  font-size: 16px;
+  width: 395px;
+  height: 69px;
+  border-radius: 16px;
+  border: none;
+  background: #E1EAF0;
+  margin-bottom: 20px;
+  margin-left: 10px;
+  padding-left: 10px;
+}
+
+.input-btn {
+  font-size: 16px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 5px;
+  padding: 10px;
+  
+  
+}
+
+input:hover {
+  outline-color: lightblue;
+}
+
+.button {
+  width: 60px;
+  height: 44px;
+  padding: 10px;
+  font-size: 20px;
+  background: #DC4131;
+  color: white;
+  border: none;
+  border-radius: 16px;
+  margin-left: 5px; /* move LEFT */
+  
+}
+  .message {
+    max-width: 70%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 15px;
+    word-wrap: break-word;
+    line-height: 1.4;
+  }
+
+  .user {
+    font-family: "Elza Trial", sans-serif;
+    align-self: flex-end;
+    background: #E1EAF0;
+    padding: 10px;
+  }
+
+  .bot {
+    font-family: "Elza Trial", sans-serif;
+    align-self: flex-start;
+    background: #F7F2DE;
+    color: black;
+    padding: 10px;
+    
+  }
+
+.error-message {
+  background: white;
+  font-family: "Arimo", sans-serif;
+  color: #DC4131;
+  padding: 10px;
+  border-radius: 4px;
+  width: 464px;
+  font-weight: normal;
+  margin-bottom: 10px;
+  border: 1px solid #DC4131;
+  text-align: center;
+}
+
+.typing-bubble {
+  display: inline-block;
+  background: #F7F2DE; /* same as bot bubble */
+  border-radius: 15px;
+  padding: 10px 15px;
+  color: #333;
+  max-width: 70%;
+  font-family: "Elza Trial", sans-serif;
+  position: relative;
+}
+
+.typing-dots {
+  display: flex;
+  gap: 5px;
+}
+
+.typing-dots span {
+  width: 8px;
+  height: 8px;
+  background-color: #333;
+  border-radius: 50%;
+  animation: blink 1.4s infinite both;
+}
+
+.typing-dots span:nth-child(2) {
+  animation-delay: 0.2s;
+}
+.typing-dots span:nth-child(3) {
+  animation-delay: 0.4s;
+}
+
+
+/* MOBILE VERSION */
+
+
+@media screen and (max-width: 768px) {
+  
+  /* nav */ 
+  
+  .dropdown-content {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #008F51;
+  z-index: 1001;
+  overflow-y: auto;
+  flex-direction: column;
+  box-sizing: border-box;
+}
+
+.dropdown-content.show {
+  display: flex;
+}
+
+.dropdown-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1px;
+  border-bottom: 2px solid black;
+}
+
+.dropdown-logo {
+  font-family: "Frank Ruhl Libre", serif;
+  color: black;
+  font-size: 28px;
+  margin: 0;
+  align-items: center;
+  padding-left: 70px;
+}
+  
+  
+  .dropdown-content a {
+  font-family: "Arimo", sans-serif;
+  font-size: 28px;
+  text-align: center;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+
+  }
+   
+  .prod {
+  margin-top: 100px;
+}
+
+.checkout {
+  margin-top: 200px;
+}
+  
+
+  nav.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  box-sizing: border-box;
+  
+}
+  
+  
+  
+/* chatbot */
+  
+  .chatbot {
+    width: 100vw;   
+    height: calc(100vh - 72px);
+    top: 82px; 
+    left: 0;
+    transform: none;
+    margin: 0;
+    border-radius: 0; 
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end; 
+    overflow: hidden;
+    z-index: 999;  
+  }
+  
+  .chat-container {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  
+}
+
+  .input {
+    margin-left: 10px;
+    height: 44px;
+      
+  } 
+
+  .messages {
+    padding: 10px;
+    flex: 1;           
+  }
+
+  .input-btn {
+    flex-direction: row;
+    padding: 0 20px 20px 20px;
+    align-items: stretch;
+    font-size: 16px;
+    gap: 5px;
+    padding: 10px;
+  }
+  
+  
+   .user {
+    font-family: "Elza Trial", sans-serif;
+    align-self: flex-end;
+    background: #E1EAF0;
+    padding: 10px;
+  }
+
+  .bot {
+    font-family: "Elza Trial", sans-serif;
+    align-self: flex-start;
+    background: #F7F2DE;
+    color: black;
+    padding: 10px;
+    
+  }
+
+.error-message {
+  background: white;
+  font-family: "Arimo", sans-serif;
+  color: #DC4131;
+  padding: 10px;
+  border-radius: 4px;
+  width: 464px;
+  font-weight: normal;
+  margin-bottom: 10px;
+  border: 1px solid #DC4131;
+  text-align: center;
+}
+
+.typing-bubble {
+  display: inline-block;
+  background: #F7F2DE; /* same as bot bubble */
+  border-radius: 15px;
+  padding: 10px 15px;
+  color: #333;
+  max-width: 70%;
+  font-family: "Elza Trial", sans-serif;
+  position: relative;
+}
+
+.typing-dots {
+  display: flex;
+  gap: 5px;
+}
+
+.typing-dots span {
+  width: 8px;
+  height: 8px;
+  background-color: #333;
+  border-radius: 50%;
+  animation: blink 1.4s infinite both;
+}
+
+.typing-dots span:nth-child(2) {
+  animation-delay: 0.2s;
+}
+.typing-dots span:nth-child(3) {
+  animation-delay: 0.4s;
+}
+
+  
+}

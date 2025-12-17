@@ -1,0 +1,852 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+body {
+  font-family: "Arimo", sans-serif;
+  font-size: 16px;
+  background-color: white;
+  color: #0B0A08;
+  align-items: center;
+ 
+}
+
+.skip-link {
+  position: absolute;
+  left: -999px;
+  z-index: 1000;    
+}
+
+/* text */
+
+h1 {
+  font-weight: normal;
+  font-family: "Frank Ruhl Libre", Light;
+  font-size: 36px;
+  
+}
+
+h1 a {
+    all: unset; 
+    display: inline; 
+    color: inherit;
+    cursor: default;
+}
+
+h2 {
+  font-weight: normal;
+  font-family: "Arimo", sans-serif;
+  font-size: 36px;
+}
+
+h3 {
+  font-weight: normal;
+  font-family: "Arimo", sans-serif;
+  font-size: 20px;
+}
+
+h4 {
+  font-weight: normal;
+  font-family: "Arimo", sans-serif;
+  font-size: 20px;
+}
+
+p {
+  font-weight: normal;
+  font-family: "Arimo", sans-serif;
+}
+
+.text1 {
+  font-family: "Arimo", sans-serif;
+  font-size: 20px; 
+}
+
+.text2 {
+    font-family: "Arimo", sans-serif;
+  font-size: 20px;   
+}
+
+.text3 {
+  font-family: "Arimo", sans-serif;
+  font-size: 20px;
+  color: grey;
+  margin-bottom: 90px;
+}
+
+/* nav */
+
+nav {
+  
+  background-color: #F7F2DE;
+  padding: 1px 15px 1px 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid;
+  height: 87px;
+ 
+}
+
+.nav-button {
+  border: 0px;
+  background: none;
+  font-size: 20px;
+
+}
+
+.nav-button:hover {
+  opacity: 40%;
+}
+
+.basket {
+  background-color: #008F51;
+  font-family: "Arimo", sans-serif;
+  padding: 10px 20px;
+  border-radius: 19px;
+  justify-content: right;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #008F51;
+  width: 500px;
+  height: 850px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  font-family: "Arimo", sans-serif;
+  font-size: 40px;
+  text-align: center;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  
+}
+
+.dropdown-logo {
+  display: none;
+}
+
+
+.menubtn {
+  background: none;
+  border: none;
+  font-size: 30px;
+  padding: 20px;
+  padding-left: 30px;
+  
+}
+
+.menubtn:hover {
+  opacity: 40%;
+}
+
+.prod {
+  margin-top: 150px;
+}
+
+.checkout {
+  margin-top: 300px;
+}
+
+.dropdown-content a:hover {
+  text-decoration: underline;
+}
+.show {display:block;}
+
+
+/* header */
+
+.image-container {
+  position: relative;
+}  
+  
+.image-container img {
+  width: 100%;
+  height: auto;         
+  display: block;
+}
+
+.logo {
+  position: absolute;
+  top: 30%;                
+  left: 50%;                  
+  transform: translate(-50%, -50%);
+  color: white;               
+  font-size: 200px;            
+  font-family: "Frank Ruhl Libre";
+  font-weight: light;
+  text-align: center;
+  }
+
+.vertical-line {
+  position: absolute;
+  top: 40%;               
+  left: 50%;               
+  transform: translateX(-50%);
+  height: 340px; 
+  border-left: 2px solid white;  
+}
+
+.vertical-line2 {
+  width: 1px;
+  flex-shrink: 0;
+  border-left: 1px solid;
+  align-self: stretch;
+}
+
+.header-text {
+  position: absolute;
+  width: 40%;
+  top: 70%;                
+  left: 50%;                  
+  transform: translate(-50%);
+  color: white;               
+  font-size: 50px;            
+  font-family: "Arimo", sans-serif;
+  text-align: center;
+  
+
+}
+
+/* main section */
+
+.columns { 
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 20px;
+  background-color: white;
+  text-align: center;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.columnwrapper {
+  width: 100%;
+  border-bottom: 1px solid black;
+}
+
+.sub-header {
+  width: 456px;
+  height: 72px;
+  margin-top: 90px;
+  margin-bottom: 8px;
+}
+
+.accent-text {
+  font-family: "Frank Ruhl Libre", Light;
+  font-size: 20px;
+  text-align: center;
+  max-width: 400px;
+}
+
+.howitworks {
+  width: auto;
+  height: 785px;
+  justify-content: center;
+  text-align: center;
+  background-color: #F7F2DE;
+  padding: 40px;
+}
+
+.howitworks h2 {
+  padding-top: 392px;
+  width: 400px;
+}
+
+.columns2 {
+  background-color: #F7F2DE;
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  border-bottom: 1px solid;
+}
+
+.column2 {
+  display: grid;
+  grid-template-columns: 278px 1fr;
+  align-items: center;
+  background-color: #F7F2DE;
+  padding: 65px 90px;
+  max-height: none;
+  text-align: left;
+  border: 1px solid grey;
+  overflow: visible; 
+}
+
+.sub-header2 {
+  font-size: 25px;
+  text-align: left;
+  white-space: nowrap;
+  margin: 0;
+}
+
+.description {
+  font-size: 20px;
+  margin-left: 278px;
+}
+
+.wrap {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.buttonred {
+  color: white;
+  background-color: #DC4131;
+  font-size: 16px;
+  font-family: "Arimo", sans-serif;
+  padding: 14px;
+  width: 320px;
+  height: 25px;
+  border-radius: 9px;
+  border: 0px;
+  margin-bottom: 90px;
+  margin-top: 15px;
+  text-decoration: none;
+  line-height: 24px;
+  
+}
+
+.buttonred:hover {
+  background-color: #AE2E21;
+  text-decoration: underline;
+}
+
+.midpic {
+  width: 448px;
+  height: 327px;
+  object-fit: cover; 
+  border-radius: 16px;
+  margin-top: 45px;
+  margin-bottom: 45px;
+}
+
+  .text-wrapper a {
+    font-size: 16px;
+    color: #000000;
+    opacity: 0.7;
+}
+
+/* produce section */
+
+.produce {
+    display: flex;
+    flex-direction: column;
+    position: relative; 
+    width: 455px;
+    max-width: 100%;
+    gap: 8px;
+    
+}
+
+.imagewrapper {
+    position: relative;
+    width: 100%;
+    height: 432px;
+    overflow: hidden;
+    border-radius: 16px;
+}
+
+.producelist {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  overflow-y: hidden;
+  gap: 29px;
+  margin-bottom: 90px; 
+}
+
+.producewrap {
+  display: flex;
+  flex-direction: column;
+  padding-left: 45px;
+  gap: 29px; 
+}
+
+.produceheader {
+  padding-top: 90px;
+}
+
+.produceimg {
+  width: 455px;
+  height: 432px;
+  object-fit: cover; 
+  display: block;
+  border-radius: 16px;
+}
+
+.producebtn {
+  font-family: "Arimo", sans-serif;
+  background-color: #0B0A08;
+  color: white;
+  border-radius: 44px;
+  padding: 10px 16px 10px 16px;
+  border: none;
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+}
+
+.producebtn:hover {
+  transform: scale(1.1);
+  transition: all 0.5s ease;
+}
+
+.produce-info + .text3 {
+  margin-top: 4px; 
+  text-align: left; 
+}
+
+.produce-info {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* form */
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding-left: 20px;
+  
+}
+
+input {
+  width: 400px;
+  padding: 15px;
+  margin: 0px;
+  border-radius: 3px;
+  border: 0px;
+   
+}
+
+.formbtn {
+  width: 430px;
+  padding: 15px;
+  border-radius: 3px;
+  border: 0px;
+  margin-top: 0px;
+}
+
+.visually-hidden {
+  position: absolute !important;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+.error-msg {
+  color: red;
+  font-size: 0.9rem;
+  margin-top: 4px;
+}
+
+/* footer */
+
+footer {
+  font-family: "Frank Ruhl Libre", Light;
+  font-weight: normal;
+  background-color: #DC4131;
+  color: white;
+  margin-top: auto; 
+  padding: 20px;
+  font-size: 20px;
+  width: 100%;
+  
+}
+
+footer h2 {
+  padding-left: 20px;
+}
+
+.footertext {
+  width: 400px;
+  padding-left: 20px;
+}
+
+.footerline {
+  border-bottom: 1px solid white;
+  padding-bottom: 20px;
+  padding-left: 20px;
+}
+
+
+
+
+
+
+
+
+/* MOBILE VERSION */
+
+@media (max-width: 768px) {
+
+  h1 { font-size: 24px; }
+  h2 { font-size: 18px; }
+  h3, h4, p, .text1, .text2, .text3 { font-size: 16px; padding-left: 10px; } 
+  
+  
+  
+  
+  
+  .logo {
+    position: absolute;
+    top: 22%;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 75px;
+    text-align: center;
+  }
+  
+  .header-text {
+    position: absolute;
+    top: calc(22% + 90px + 160px + 32px);
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80%;
+    font-size: 24px;
+    line-height: 1.4;
+    text-align: center;
+  }
+  
+   .image-container {
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+  }
+
+  .image-container img {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+  }
+  
+  .vertical-line {
+    position: absolute;
+    top: calc(22% + 90px);
+    left: 50%;
+    transform: translateX(-50%);
+    height: 160px;
+    border-left: 1px solid white;
+    opacity: 0.8;
+  }
+
+  nav {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 16px;
+  }
+  
+  .nav-button {
+    font-size: 18px;
+  }
+  
+  .dropdown-content {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: #008F51;
+  z-index: 1001;
+  overflow-y: auto;
+  flex-direction: column;
+}
+
+.dropdown-content.show {
+  display: flex;
+}
+
+.dropdown-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1px;
+  border-bottom: 2px solid black;
+}
+
+.dropdown-logo {
+  font-family: "Frank Ruhl Libre", serif;
+  color: black;
+  font-size: 28px;
+  margin: 0;
+  align-items: center;
+  padding-left: 70px;
+}
+  
+  
+  .dropdown-content a {
+  font-family: "Arimo", sans-serif;
+  font-size: 28px;
+  text-align: center;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+
+  }
+   
+  .prod {
+  margin-top: 100px;
+}
+
+.checkout {
+  margin-top: 200px;
+}
+
+  .columns {
+    flex-direction: column;
+    align-items: center;
+    padding-left: 16px;
+    padding-right: 16px;
+    box-sizing: border-box;
+    margin: 0 auto;
+  }
+
+  .columns2 {
+    flex-direction: column;
+  }
+
+  .howitworks {
+    height: auto;
+    padding: 90px 20px;
+  }
+
+  .howitworks h2 {
+    padding-top: 0;
+    width: 100%;
+    font-size: 24px;
+  }
+
+  .text-wrapper a {
+    margin-left: 10px;
+    font-size: 16px;
+    color: #000000;
+    opacity: 0.7;
+}
+
+  .column2 {
+    grid-template-columns: 1fr;
+    padding: 45px;
+    max-height: none;
+  }
+
+  .description {
+    margin-left: 0;
+    margin-top: 24px;
+  }
+  
+    .column {
+    gap: 4px;
+    padding: 45px 16px;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+  }
+  
+    .midpic {
+    height: 280px;
+    width: 100%;
+    max-width: 100%;
+    object-fit: cover;
+    border-radius: 16px;
+  }
+
+  .sub-header {
+    width: 90%;
+    margin: 0;
+    margin-top: 50px;
+    text-align: center;
+    font-size: 24px;
+    
+  }
+
+  .accent-text {
+    font-size: 18px;
+    max-width: 100%;
+    margin: 0 auto;
+  }
+
+  .buttonred {
+    display: inline-block;
+    width: 280px;
+    max-width: 100%;
+    height: 25px;
+    padding: 10px;
+    margin-top: 45px;
+    margin-bottom: 45px;
+   
+  }
+ 
+
+
+  
+  .produceheader {
+    font-size: 24px;
+    font-family: "Arimo", sans-serif;
+    padding-left: 10px;
+    
+  }
+
+  .producewrap {
+    width: 100%;
+    max-width: 100%;
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-bottom: 90px;
+    box-sizing: border-box;
+    margin: 0 auto; 
+  }
+  
+  .producelist {
+    flex-direction: row;
+    gap: 29px;
+    overflow-x: auto;
+    overflow-y: hidden;
+    scroll-behavior: smooth;
+  }
+  
+  .produce {
+    width: 100%;
+    max-width: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    
+  }
+  
+  .produceimg {
+    height: 90%;
+    width: 300px;
+    border-radius: 16px;
+    display: block;
+    object-fit: cover;
+    padding-left: 10px;
+  }
+  
+  .imagewrapper {
+    width: 300px;
+    height: 400px; 
+    overflow: hidden;
+    border-radius: 16px;
+  }
+ 
+  
+  .producebtn {
+    position: absolute;
+    bottom: 55px;
+    right: 16px;
+    padding: 10px 16px;
+    font-size: 16px;
+  }
+
+ 
+  form {
+  display: flex;
+  flex-direction: column;
+  padding-left: 10px;
+  gap: 0;
+}
+  
+  input {
+    width: 78%;
+    max-width: 100%;
+    height: 30px;
+    object-fit: cover;
+  }
+  
+ .formbtn {
+    width: 86%;
+    max-width: 100%;
+    height: 45px;
+    object-fit: cover;
+    margin-top: 0;
+  }
+
+.visually-hidden {
+  position: absolute !important;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+.error-msg {
+  color: red;
+  font-size: 0.9rem;
+  margin-top: 4px;
+}
+
+ footer {
+  font-family: "Frank Ruhl Libre", Light;
+  font-weight: normal;
+  background-color: #DC4131;
+  color: white;
+  margin-top: auto; 
+  padding: 20px;
+  font-size: 20px;
+  width: 100%;
+  
+}
+  
+  footer h2 {
+    padding-left: 10px;
+    font-size: 24px;
+  }
+  
+  footer h1 {
+  font-size: 34px;
+  }
+
+.footertext {
+  width: 330px;
+  padding-left: 10px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.footerline {
+  border-bottom: 1px solid white;
+  padding-bottom: 32px;
+  padding-left: 10px;
+  
+}
+  
+}

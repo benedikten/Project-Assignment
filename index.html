@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home Delivery</title>
+   <link rel="stylesheet" href="css/style.css">
+ </head>
+  
+  
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@300..900&display=swap');
+</style>
+  
+<body>
+  
+<a class="skip-link" href="#main" aria-hidden="false">Skip to content</a>
+  
+<nav class="navbar" aria-label="Main navigation">
+  <div class="dropdown">
+  <button class="nav-button"
+          onclick="myFunction()"
+          aria-label="Open main menu"
+          aria-haspopup="true"
+          aria-controls="mainMenu"
+          aria-expanded="false">
+    ☰</button>
+    
+  <div id="myDropdown" class="dropdown-content">
+    <div class="dropdown-header">
+    <button class="menubtn" id="closeMenuBtn" aria-label="Close menu">✖</button>
+    <h1 class="dropdown-logo">FRAM</h1>
+    <hr color="black">
+    </div>
+    
+    <a href="products.html" class="prod" role="menuitem"          tabindex="0">PRODUCTS</a>
+    <a href="chatbot.html" class="chat" role="menuitem"  tabindex="0">CHAT</a>
+    <a href="#" class="checkout" role="menuitem"  tabindex="0">CHECKOUT</a>
+  </div> 
+</div>
+  
+    <h1>
+      <a href="index.html">FRAM</a>
+    </h1>
+  
+    <div class="cart" aria-live="polite" aria-atomic="true">
+      <span class="basket" id="basketcount" aria-live="polite" aria-atomic="true">0</span>
+    </div>
+</nav>
+  
+ <main id="main" role="main"> 
+  <header>
+    <div class="image-container">
+      <img src="https://raw.githubusercontent.com/benediktene/Images/refs/heads/main/markus-spiske-WcLzVLbUP5g-unsplash.jpg" alt="mountains and green fields" width="100%" loading="lazy">
+      
+     <div class="logo-container">
+        <div  class="logo">FRAM</div>
+        <div class="vertical-line"></div>
+      </div>
+    
+      <div class="header-text">HOME DELIVERY FROM YOUR LOCAL FARMS</div>
+     </div>
+    
+  </header>
+    
+  <div class="columnwrapper">
+    <section class="columns">
+      <div class="column">
+        <h2 class="sub-header">SHOP OUR SEASONAL SELECTION</h2>
+        <p class="accent-text"> Updated every week </p>
+      
+        <img src="https://raw.githubusercontent.com/benediktene/Images/refs/heads/main/nina-luong-dp06f70Eyvc-unsplash.jpg" class="midpic" alt="vegetables" loading="lazy">
+          <p class="accent-text">New produce is added continously as time goes by and the seasons change.</p>
+         
+        <a href="https://codepen.io/benedikten/full/ZYWXoER" class="buttonred">Browse our selection</a>
+      </div>
+      
+      <div class="vertical-line2" aria-hidden="true"></div>
+      
+      <div class="column">
+        <h2 class="sub-header">ASK US ABOUT ANYTHING</h2>
+        <p class="accent-text">All your questions answered</p>
+        
+        <img src="https://raw.githubusercontent.com/benediktene/Images/refs/heads/main/rebecca-ritchie-NWrp3FK68yE-unsplash.jpg" class="midpic" alt="man pointing in green field" loading="lazy">
+        
+        <p class="accent-text">New produce is added continously as time goes by and the seasons change.</p>
+
+        <a href="https://codepen.io/benedikten/full/NPNeoqw" class="buttonred">Go to chat</a>
+        
+      </div>
+     
+    </section>
+  </div>
+    
+  <aside class="columns2"> 
+    <div class="howitworks">
+        <h2>THIS IS HOW IT WORKS</h2>
+    </div>
+    
+    <section class="wrap">
+      
+    <div class="column2">
+
+        <h3 class="sub-header2">ORDER GROCERIES</h3>
+      <div class="description">  
+        <div class="text-wrapper">
+      <p>Fram is a circular service that ensures your kitchen is always stocked with the essentials you need. Browse our seasonal selection, choose your items, and place your order online.</p>
+       
+      <a href="https://codepen.io/benedikten/full/ZYWXoER">See our stock here</a>
+      </div>
+</div>
+    </div>
+    
+    <div class="column2">
+
+        <h3 class="sub-header2">STOCK UP</h3>
+        <div class="description"> 
+          <div class="text-wrapper">
+      <p>Once your order arrives, unpack the produce and store it however it works best for you. Hold onto the containers—they’re yours to keep until your next order.</p>
+      </div>
+      </div>
+    </div>
+    
+     <div class="column2">
+
+        <h3 class="sub-header2">SCAN & REORDER</h3>
+         <div class="description">
+           <div class="text-wrapper">
+       <p>Ready for a refill? Grab the containers from your last order and scan the QR code with our app or your phone’s camera. This instantly adds the items back to your cart, making reordering a breeze.</p>
+       </div>   
+       </div>
+      </div>
+    
+   <div class="column2">
+     
+        <h3 class="sub-header2">SWAP & REUSE</h3>
+       <div class="description"> 
+         <div class="text-wrapper">
+     <p>When we deliver your new order, simply leave your empty containers outside. We’ll pick them up, clean them thoroughly, and reuse them for future deliveries.</p>
+     </div>
+     </div>
+ </div>
+    
+    </section>
+  </aside>     
+    
+    
+    <section class="producewrap">
+        <h2 class="produceheader">POPULAR PRODUCE</h2>
+      
+ <section class="producelist">
+      <div class="produce">
+       <div class="imagewrapper">
+
+        <img src="https://raw.githubusercontent.com/benediktene/Images/refs/heads/main/lukasz-rawa-HB_MVtHVMLc-unsplash.jpg" class="produceimg" alt="image of oats" loading="lazy">
+        <button class="producebtn" id="addtocart" aria-label="add oats to basket">Add to basket</button>
+      </div> 
+     <div class="produce-info">
+        <p class="text1">Oats</p>
+        <p class="text2"> 48 kr / kg</p>
+   </div>
+        <p class="text3">1 kg</p>
+      </div>
+   </div>
+ 
+       <div class="produce">
+         <div class="imagewrapper">
+        <img src="https://raw.githubusercontent.com/benediktene/Images/refs/heads/main/goh-rhy-yan-CCxWLAx0qmk-unsplash.jpg" class="produceimg" alt="image of red onions" loading="lazy">
+         <button class="producebtn" aria-label="add red onions to basket">Add to basket</button>
+            </div> 
+          <div class="produce-info">
+         <p class="text1">Red Onions</p>
+        <p class="text2"> 48 kr / kg</p>
+         </div>
+         <div>
+        <p class="text3">0.5 kg</p>
+      </div>
+         </div>
+   </div>
+      <div class="produce">
+        <div class="imagewrapper">
+        <img src="https://raw.githubusercontent.com/benediktene/Images/refs/heads/main/matthew-pilachowski-w1eAFyBLhLM-unsplash.jpg" class="produceimg" alt="image of garlic" loading="lazy">
+        <button class="producebtn"aria-label="add garlic to basket">Add to basket</button>
+        </div> 
+        
+        <div class="produce-info">
+        <p class="text1">Garlic</p>
+        <p class="text2"> 48 kr / kg</p>
+        
+        </div>
+        
+        <p class="text3">0.2 kg</p>
+       </div>
+        </div>
+      </div>
+     </div>
+      </section>
+      
+    </section> 
+    
+  
+  <footer>
+    <h1 class="footerline">FRAM</h1>
+    <h2>STAY UPDATED</h2>
+    <p class="footertext">Sign up for our newsletter to be the first to know about new produce or other exciting news!</p>
+    
+        <!-- FORM -->  
+  <section class="formbg" id="contact">
+      
+    <form id="newsletterform" aria-labelledby="newsletter-title">
+      <h3 id="newsletter-title" class="visually-hidden">Subscribe to our  newsletter</h3>
+      <label for="name" class="visually-hidden">Your Name</label>
+      <input type="text" 
+         id="name"
+         name="Name"
+         aria-describedby="nameError"
+         placeholder="First name"
+         required
+         >
+      
+        <p class="error-msg" id="nameError" aria-live="polite"></p>
+      
+      <label for="email" class="visually-hidden">Email Address</label>
+      <input type="email"
+         id="email"
+         name="email"
+         aria-describedby="emailError"
+         placeholder="E-mail address"
+         required
+         >
+      
+        <p class="error-msg" id="emailError" aria-live="polite"></p>
+      
+       <button class="formbtn" type="submit">Send</button>  
+    </form>
+  </section>
+ </footer>
+     <script src="js/script.js"></script>
+</body>
+  
+</html>

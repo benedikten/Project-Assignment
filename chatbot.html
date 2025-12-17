@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/chatbot.css">
+  <title>Home Delivery</title>
+ </head>
+  
+  
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@300..900&display=swap');
+</style>
+  
+<body>
+  
+<a class="skip-link" href="#main" aria-hidden="false">Skip to content</a>
+  
+<nav class="navbar" role="navigation" aria-label="Main navigation">
+  <div class="dropdown">
+  <button class="nav-button"
+          aria-label="Open main menu"
+          aria-haspopup="true"
+          aria-controls="mainMenu"
+          aria-expanded="false">
+    ☰</button>
+    
+  <div id="myDropdown" class="dropdown-content">
+    <div class="dropdown-header">
+    <button class="menubtn" id="closeMenuBtn" aria-label="Close menu">✖</button>
+    <h1 class="dropdown-logo">FRAM</h1>
+    <hr color="black">
+    </div>
+    
+    <a href="products.html" class="prod" role="menuitem"          tabindex="0">PRODUCTS</a>
+    <a href="chatbot.html" class="chat" role="menuitem"  tabindex="0">CHAT</a>
+    <a href="#" class="checkout" role="menuitem"  tabindex="0">CHECKOUT</a>
+  </div> 
+</div>
+  
+    <h1>
+      <a href="index.html">FRAM</a>
+    </h1>
+  
+    <div class="cart" aria-live="polite" aria-atomic="true">
+      <span class="basket" id="basketcount" aria-live="polite" aria-atomic="true">0</span>
+    </div>
+</nav>
+  
+  <header>
+    <div class="image-container">
+      <img src="https://raw.githubusercontent.com/benediktene/Images/refs/heads/main/markus-spiske-WcLzVLbUP5g-unsplash.jpg" alt="header image" width="100%" loading="lazy">
+
+      
+      <div class=chatbot> 
+       <div id="chat-container">
+       <div id="messages" class="messages" role="log" aria-live="polite"></div>
+       
+         <div class="input-btn">
+         <input class="input" type="text" id="user-input" placeholder="How can I help you today?">
+       <button class="button" id="send-btn">↑</button>
+         </div>
+       </div>
+      </div>
+      
+   </div>
+  </header>
+    
+    
+
+</div>
+<script src="js/script.js"></script>
+    <script src="js/chatbot.js"></script> 
+    </body>
+  </html>
