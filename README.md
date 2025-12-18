@@ -46,7 +46,7 @@ Google Maps API key:
 4. Open products.html in a code editor and insert your API key where instructed
 
 
-Important: Make sure to never share your API key publicly. Always keep it secret.
+**Important**: Make sure to never share your API key publicly. Always keep it secret.
 
 
 ## How to Run Locally
