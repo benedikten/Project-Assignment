@@ -27,19 +27,19 @@ Key features
 
 ## Setup & Installation
 
-Installation:
+**Installation**:
 1. Clone or download the repository
 2. Locate the folder on your computer
 3. Open index.html in your browser
 4. Open the chatbot.js file and enter your OpenAI key 
 5. Open products.html in a code editor and insert your Google Maps Key
 
-OpenAI key:
+**OpenAI key**:
 1. Go to https://platform.openai.com/
 2. Create your API key
 3. Enter your OpenAI key where instructed in the chatbot.js file 
 
-Google Maps API key:
+**Google Maps API key**:
 1. Go to https://console.cloud.google.com
 2. Enable the Maps Javascript API 
 3. Create your API key
